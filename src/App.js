@@ -1,11 +1,21 @@
-import React from "react";
-import "./style.css";
+import MembershipForm from "./components/MembershipForm"
+import { ThemeProvider } from "@mui/styles"
+import { createTheme, responsiveFontSizes } from "@mui/material/styles"
+let theme = createTheme()
+theme = responsiveFontSizes(theme)
 
-export default function App() {
+// let Yellow= #ffd300;
+// let Tangerine= #ff9200;
+// let  Blue= #cad7dd;
+// let  Green= #49c8a8;
+// let  LGrey= #f5f8f9;
+// let  Grey= #373d40;
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <MembershipForm />
+    </ThemeProvider>
+  )
 }
+
+export default App
