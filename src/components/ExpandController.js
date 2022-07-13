@@ -14,11 +14,11 @@ const useStyles = makeStyles((theme) => ({
 const ExpandController = ({ handleToggle, toggle }) => {
   const classes = useStyles()
   return (
-    <Stack justifyContent="center" alignItems="center">
-      <Box pt={{ xs: 10, sm: 25 }}>
+    <Stack justifyContent="center" alignItems="center" py={19}>
+      <Box pb={10}>
         <FaceSvg />
       </Box>
-      <Stack py={{ xs: 8, sm: 15, md: 4 }}>
+      <Stack>
         <Typography pb={2} variant="h4" fontWeight="bold" align="center">
           Front-end challenge!
         </Typography>
@@ -26,13 +26,13 @@ const ExpandController = ({ handleToggle, toggle }) => {
           variant="h6"
           fontWeight="bold"
           align="center"
-          px={{ xs: 4, md: 13 }}
+          px={3}
           color="#373d40"
         >
           This is a design that you will need to code up and impress us
         </Typography>
       </Stack>
-      <Stack pb={{ xs: 6, sm: 1 }} pt={{ sm: 30, md: 13 }}>
+      <Stack pt={8}>
         <Avatar
           className={classes.arrowSvg}
           sx={{

@@ -3,8 +3,8 @@ import React from "react"
 
 const MyWorld = () => {
   return (
-    <Grid container py={10} justifyContent="center">
-      <Grid item xs={8} py={8}>
+    <Grid container py={8} justifyContent="center">
+      <Grid item xs={8} pt={10} pb={30}>
         <>
           <Typography variant="h4" fontWeight="bold">
             My world today
